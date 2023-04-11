@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+video{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    height: auto;
+
+}
+.container{
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+}
+/* .left-content,.right-content{
+    flex-basis: 50%;
+} */
+.left-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr));
+    grid-gap:1rem;
+    flex-basis: 60%;
+}
+.card{
+    width: 220px;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgba(237, 243, 236, 0.5);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    /* background-color: aliceblue; */
+    animation: myanimation 10s infinite;
+}
+@keyframes myanimation {
+    0% {background-image: linear-gradient(#FF0099 ,#493240);}
+    25%{background-image: linear-gradient(#6D6027,#D3CBB8);}
+    50%{background-image: linear-gradient(#00F260,#0575E6);}
+    75%{background-image: linear-gradient(#EB5757,#000000);}
+    100% {background-image: linear-gradient(#bdc3c7,#2c3e50);}
+  }
+ 
+.right-content{
+    width: 40%;
+    text-align: center;
+    color: aliceblue;
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    /* border: 5px solid wheat;
+    border-radius: 50%;
+    flex-basis: 40%; */
+
+
+}
+.right-content img{
+    margin: 2rem;
+    height: 160px;
+    /* border: 5px solid rgb(246, 111, 250); */
+}
+.right-content h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    
+}
+
+.abilities{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.abilities .group{
+    background-color: silver;
+    color: blueviolet;
+    border-radius: 20px;
+    padding: 0.5rem;
+    font-size: 12px;
+    margin-left: 1rem;
+
+}
+.base-stat{
+    margin-top: 2rem;
+}
+.btn{
+    display: flex;
+}
+.btn button{
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 0.3rem 0;
+    margin: 1rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: #493240;
+    background-color: silver;
+    border-radius: 12px;
+   cursor: pointer;
+
+}
